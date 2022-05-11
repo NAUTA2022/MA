@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Lista de tareas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="s3.css">
+    <script src="C.agenda.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <div class="logo">
+    <a href="index.html">
+  <center><image src="multimedia/logo.png" width="60" height="60"></image></center>
+</a>
+</div>
+<br>
+<br>
+<br>
+    <div class="listroundBorder">
+        <div class="date">
+            <div class="dateRight">
+                <div id="dateNumber"></div>
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                
+            </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <br>
+        <br>
+        <div class="estilo">
+        <form onsubmit="addNewTask(event)" >
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton" >Agregar</button>
+            <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+        </form>
+    </div>
+        <div id="tasksContainer"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  <div class="final01">
+<br>
+<br>
+<br>
+<br>
+<br>
+<p align="center">
+  Created By:
+</p>
+<br>
+<br>
+</div>
+<br>
+<div class="final02">
+<br>
+<p align="center">
+  NAUTA
+</p>
+<br>
+<br>
+<br>
+</div>
+
+<div class="redes">
+<a href="https://www.instagram.com/uli.a.marin/">
+  <image src="multimedia/instagram.png" width="50" height="50"></image>
+</a>
+
+<a href="mailto:andresquinteros2017@gmail.com">
+  <image src="multimedia/gmail.png" width="50" height="50"></image>
+</a>
+</div>
+
+</body>
+</body>
+</html>

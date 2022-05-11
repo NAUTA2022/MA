@@ -1,0 +1,165 @@
+:root {
+    --primary: #A5C882;
+    --secondary: #D33F49;
+    --light: #ye;
+    --dark: #000;
+    --diabled: #e7e7e7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+}
+
+*:first-letter {
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth,
+#dateNumber,
+#dateText  {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+     font-size: 6vw;
+
+}
+
+#dateMonth,
+#dateYear {
+    margin-left: 7px;
+}
+
+#dateText  {
+    font-size: 4vw;
+    margin: 0px 20px;
+
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    border: none;
+    padding-left: 10px;
+    background-color: var(--diabled);
+    width: 50%;
+}
+
+input:focus {
+    outline: none;
+}
+button {
+  width: 50%;
+}
+
+.addTaskButton,
+.orderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+s
+.addTaskButton {
+    width: 200%;
+    height: 35px;
+    border-radius: 10%;
+    font-size: 18px;
+    background-color: var(--diabled);
+
+}
+
+.orderButton {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--diabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+.text02 p {
+  font-size: 4vw;
+    width: 100%;
+    color: white;
+}
+
+
+.final01 p{
+  font-size: 4vw;
+    width: 100%;
+    color: white;
+          
+}
+
+.final02 p {
+  font-size: 4vw;
+    width: 100%;
+    color: #bd8857;
+          
+}
+
+.redes a {
+  align-items: center;
+}
+
+.logo {
+
+  overflow: hidden;
+  position: absolute;
+  
+  }
