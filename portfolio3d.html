@@ -1,0 +1,189 @@
+<html>
+  <head>
+     <meta charset="UTF-8">
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
+
+  </head>
+
+
+<script>
+  AFRAME.registerComponent('change-color-on-hover', {
+    schema: {
+      color: {default: 'red'}
+    },
+
+    init: function () {
+      var data = this.data;
+      var el = this.el;  // <a-box>
+      var defaultColor = el.getAttribute('material').color;
+
+      el.addEventListener('mouseenter', function () {
+        el.setAttribute('color', data.color);
+      });
+
+      el.addEventListener('mouseleave', function () {
+        el.setAttribute('color', defaultColor);
+      });
+    }
+  });
+
+
+
+</script>
+
+
+
+  <body>
+
+    <a-scene>
+
+   
+    <a-box color="red"; position="-20 4 -45" scale="3 3 3" change-color-on-hover="color: #2B8195"></a-box>
+
+
+    <!--Links a proyectos-->
+    <a-box position="30 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#8f8f8f"  animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"; material src="https://i.ibb.co/3CJn5L6/image.png"; roughness:  100; repeat: 0.940></a-box>
+    <a-box position="33.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.youtube.com/watch?v=oclukZ2UYeg&list=RDGMEMXdNDEg4wQ96My0DhjI-cIg&index=4;  title:  Aku no ko;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="21.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+    <a-box position="22 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#495445" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"></a-box>
+    <a-box position="25.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.youtube.com/watch?v=uDkZJMH_6RE&list=RDGMEMXdNDEg4wQ96My0DhjI-cIg&index=2;  title:  Belle 1;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="29.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+    <a-box position="38 4 -45" rotation="0 180 0"  scale="7 4 0.1" color="#495445" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 3000; loop: true"></a-box>
+    <a-box position="41.2 1.7 -45" rotation="0 180 0"  scale="0.5 0.5 0.1" color="white" link="backgroundColor:  #00fbff;  highlightedColor:  #12a3d3;  position:0 1 0; scale:1 1 1; href:  https://www.youtube.com/watch?v=e_rNLXNPcp8&list=RDGMEMXdNDEg4wQ96My0DhjI-cIg&start_radio=1&rv=-6w_opp7Doo;  title:  Belle 2;  visualAspectEnabled:  false"; change-color-on-hover="color: #2B8195"></a-box>
+    <a-box position="37.5 1.7 -45" rotation="0 180 0"  scale="6 0.5 0.1" color="black"></a-box>
+
+     
+
+
+
+      <!--techo-->
+      <a-box position="0 10 0" rotation="90 0 0"  width="100" height="100" color="#1E1E1E"></a-box>
+      <!--paredes del lugar-->
+      <a-box position="0 5 -50" rotation="0 180 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="0 5 50" rotation="0 180 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="-50 5 0" rotation="0 90 0"  width="100" height="10" color="#453334"></a-box>
+      <a-box position="50 5 0" rotation="0 90 0"  width="100" height="10" color="#453334"></a-box>
+
+      
+
+      //animation//
+
+      <a-box position="10 4 -45" rotation="0 180 0"  scale="3 3 3" color="#495445" animation="property: object3D.rotation.y; to: 360; dur: 5000; loop: true"></a-box>
+
+      <a-sphere position="-10 4 -45" rotation="0 180 0"  scale="2 2 2" color="#322e3e" animation="property: object3D.scale.x; to: 3; dir: alternate; dur: 3000; loop: true" ></a-sphere>
+
+      <a-cylinder position="0 4 -45" rotation="0 180 0"  scale="2 5 2" color="#5e2b57" animation="property: object3D.position.y; to: 5; dir: alternate; dur: 2000; loop: true"></a-cylinder>
+
+
+      <a-box position="0 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="30 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-30 0.3 -45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      
+      <a-box position="0 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="30 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-30 0.3 45" rotation="0 0 0"  scale="25 2 5" color="#000000"></a-box>
+
+      <a-box position="45 0.3 0" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="45 0.3 30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="45 0.3 -30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+
+      <a-box position="-45 0.3 0" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-45 0.3 30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+      <a-box position="-45 0.3 -30" rotation="0 90 0"  scale="25 2 5" color="#000000"></a-box>
+
+
+
+      <a-box position="45 6 -45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="-45 6 45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="45 6 45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+      <a-box position="-45 6 -45" rotation="0 0 0"  scale="5 15 5" color="#000000"></a-box>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#1C0405"
+      
+      ></a-plane>
+
+      
+
+
+      <a-light type="point" intensity="0.1" position="40 9 12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 -36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="40 9 0" color="#FCE2A4"></a-light>
+ 
+
+      <a-light type="point" intensity="0.1" position="-40 9 12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -12" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -24" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 -36" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-40 9 0" color="#FCE2A4"></a-light>     
+
+
+
+
+      <a-light type="point" intensity="0.1" position="12 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="24 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="36 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-12 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-24 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-36 9 40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="0 9 40" color="#FCE2A4"></a-light>
+ 
+
+      <a-light type="point" intensity="0.1" position="12 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="24 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="36 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-12 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-24 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="-36 9 -40" color="#FCE2A4"></a-light>
+      <a-light type="point" intensity="0.1" position="0 9 -40" color="#FCE2A4"></a-light>
+    
+
+
+ <a-camera position="0 4 0">
+
+ <a-cursor></a-cursor>
+ <a-entity cursor raycaster="far: 20; interval: 1000; objects: .clickable"></a-entity>
+ <a-entity cursor="fuse: true; fuseTimeout: 500"
+           position="0 0 -1"
+           geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+           material="color: white; shader: flat">
+ </a-entity>
+
+
+
+ </a-camera>
+
+
+
+
+
+
+
+
+
+
+    </a-scene>
+
+
+  </body>
+
+
+</html>
+//esta luz metiendola en camara sirve para juegos de terror y podes usarla como luz de faro de calle
+
+<a-entity light="type: spot; angle: 30" intensity="0.1" color=#FCE2A4 rotation= 20></a-entity>
+
+
+<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+
+    <a-box color="#EF2D5E" position="0 1 -4" change-color-on-hover="color: blue"></a-box>
+
+    <a-camera><a-cursor></a-cursor></a-camera>
